@@ -1,11 +1,11 @@
-@import "bootstrap"; 
-@import "font-awesome"; 
+@import "bootstrap";
+@import "font-awesome";
 
 .navbar {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 200;
   box-shadow: 0px 1px 3px #2a2a2a;
-  background: image_url('papyrus-dark.png');
+  background: image_url('memphis-mini-dark.png')
 }
 
 .navbar-inverse a.navbar-brand {
@@ -15,10 +15,10 @@
 }
 
 .hero {
-  background: image_url('splash.jpg') no-repeat center center fixed;
+  background: image_url('hero.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-bcakground-size: cover;
   background-size: cover;
   height: 370px;
   box-shadow: 0px 3px 8px #2a2a2a;
@@ -29,20 +29,20 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .frosty {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0,0,0,0.5);
   color: white;
 }
 
 .frosty h1 {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
-  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
 }
 
 .frosty h2 {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 200;
-  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
 }
 
 .btn {
@@ -57,15 +57,14 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 body {
   background: image_url('bg.png');
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-  color: white;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #000;
+  background: #fff;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 10px;
@@ -75,7 +74,7 @@ body {
   margin: 10px;
 }
 
-.help-block {
+.help-block, .invalid-feedback {
   color: #ff3333;
   background-color: #FFEEEE;
   border-radius: 3px;
@@ -83,20 +82,12 @@ body {
   margin: 10px;
 }
 
-.clr {
-  clear: both;
-}
-
 .lesson {
   background-color: black;
-  margin-top: 10px;
-  height: 130px;
-}
-
-.section {
-  border: 1px solid;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 20px;
+  margin-top: 10px;
+  height: 130px;
 }
 
 .lesson a {
@@ -107,7 +98,7 @@ body {
 }
 
 .lesson a b {
-  font-weight: 150;
+  font-weight: 100;
   font-size: 25px;
 }
 
@@ -140,11 +131,15 @@ ul .header .fa {
   font-size: 15px;
 }
 
-.lessons li b {
+.lesson li b {
   font-size: 25px;
   font-weight: 100;
 }
 
-.lessons li p {
+.lesson li p {
   margin: 0;
+}
+
+.course-image {
+  width: 100%;
 }

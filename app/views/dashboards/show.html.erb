@@ -1,14 +1,16 @@
-<br />
+<br/>
 
 <div class="booyah-box col-10 offset-1">
-  <h1>What I'm Learning</h1>
+  <h1>Currently Enrolled</h1>
   <% current_user.enrolled_courses.each do |course| %>
     <h3 class="text-center">
       <%= link_to course.title, course_path(course) %>
     </h3>
-    <br />
-    <%= image_tag course.image.to_s, class: 'img-fluid' %>
-    <br />
+    <br/>
+    <% if course.image.url != nil %>
+      <%= image_tag course.image.url, class: 'img-fluid' %>
+    <% end %>
+    <br/>
     <div class="row">
       <div class="col-12 col-sm-8">
         <%= course.description %>
@@ -18,17 +20,19 @@
       </div>
     </div>
     <hr class="col-8 offset-2">
-    <br class="clr" />
+    <br class="clr"/>
   <% end %>
 
-  <h1>What I'm Teaching</h1>
+  <h1>My Courses</h1>
   <% current_user.courses.each do |course| %>
     <h3 class="text-center">
       <%= link_to course.title, course_path(course) %>
     </h3>
-    <br />
-    <%= image_tag course.image.to_s, class: 'img-fluid' %>
-    <br />
+    <br/>
+    <% if course.image.url != nil %>
+      <%= image_tag course.image.url, class: 'img-fluid' %>
+    <% end %>
+    <br/>
     <div class="row">
       <div class="col-12 col-sm-8">
         <%= course.description %>
@@ -39,6 +43,6 @@
       </div>
     </div>
     <hr class="col-8 offset-2">
-    <br class="clr" />
+    <br class="clr"/>
   <% end %>
 </div>
